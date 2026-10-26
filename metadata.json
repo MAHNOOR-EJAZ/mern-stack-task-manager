@@ -1,0 +1,8 @@
+{
+  "name": "MERN Stack Task Manager",
+  "description": "Full-stack MERN task management application with Express.js REST API, Mongoose & MongoDB Atlas support, priority levels, due dates, filtering, and responsive UI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
