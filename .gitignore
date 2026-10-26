@@ -1,19 +1,8 @@
-
-# Dependencies
 node_modules/
-
-# Build output
 build/
 dist/
 coverage/
-
-# Environment variables and secrets
+.DS_Store
+*.log
 .env*
 !.env.example
-
-# Logs
-*.log
-
-# Operating system files
-.DS_Store
-Thumbs.db
