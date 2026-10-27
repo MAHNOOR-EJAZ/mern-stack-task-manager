@@ -220,7 +220,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F7F8F5] text-[#283128] flex font-sans selection:bg-[#EAF0E7] selection:text-[#789477]">
+    <div className="min-h-screen bg-[#FFCDD2] text-[#283128] flex font-sans selection:bg-[#EAF0E7] selection:text-[#789477]">
       {/* Left Sidebar (Option A Layout + Option B Sage Green Palette) */}
       <Sidebar
         currentView={currentNavView}
