@@ -220,7 +220,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F7F8F5] text-[#283128] flex font-sans selection:bg-[#EAF0E7] selection:text-[#789477]">
+    <div className="min-h-screen bg-[#E8E7F8] text-[#34364F] flex font-sans selection:bg-[#DDE5F5] selection:text-[#586A9D]">
       {/* Left Sidebar (Option A Layout + Option B Sage Green Palette) */}
       <Sidebar
         currentView={currentNavView}
@@ -264,7 +264,7 @@ export default function App() {
                 </button>
                 <button
                   onClick={() => setIsNoticeDismissed(true)}
-                  className="p-1 rounded-md text-[#7A520E] hover:text-[#283128] cursor-pointer"
+                  className="p-1 rounded-md text-[#7A520E] hover:text-[#34364F] cursor-pointer"
                   title="Dismiss notice"
                 >
                   <X className="w-4 h-4" />
@@ -313,17 +313,17 @@ export default function App() {
           {/* Task List / Grid */}
           {isInitialLoading ? (
             <div className="py-20 flex flex-col items-center justify-center space-y-3">
-              <RefreshCw className="w-6 h-6 text-[#789477] animate-spin" />
-              <p className="text-xs text-[#737B72]">Loading tasks from Express server...</p>
+              <RefreshCw className="w-6 h-6 text-[#8494C4] animate-spin" />
+              <p className="text-xs text-[#6D6F88]">Loading tasks from Express server...</p>
             </div>
           ) : displayedTasks.length === 0 ? (
-            <div className="py-16 px-6 rounded-2xl border border-[#E8ECE5] bg-white text-center flex flex-col items-center justify-center max-w-md mx-auto shadow-xs">
-              <div className="w-12 h-12 rounded-xl bg-[#EAF0E7] flex items-center justify-center text-[#789477] mb-3.5">
+            <div className="py-16 px-6 rounded-2xl border border-[#E2E1F0] bg-[#F7F6FC] text-center flex flex-col items-center justify-center max-w-md mx-auto shadow-xs">
+              <div className="w-12 h-12 rounded-xl bg-[#DDE5F5] flex items-center justify-center text-[#586A9D] mb-3.5">
                 <ListPlus className="w-6 h-6 stroke-[2.2]" />
               </div>
 
-              <h3 className="text-base font-bold text-[#283128] mb-1">No tasks to display</h3>
-              <p className="text-xs text-[#737B72] max-w-xs mb-5 leading-relaxed">
+              <h3 className="text-base font-bold text-[#34364F] mb-1">No tasks to display</h3>
+              <p className="text-xs text-[#6D6F88] max-w-xs mb-5 leading-relaxed">
                 {searchQuery || statusFilter !== 'all' || priorityFilter !== 'all' || isOverdueFilterActive
                   ? 'No tasks match your current filter selection. Try resetting filters to view all tasks.'
                   : 'Your dashboard is clear! Add your first task or load sample project tasks to get started.'}
@@ -333,7 +333,7 @@ export default function App() {
                 {searchQuery || statusFilter !== 'all' || priorityFilter !== 'all' || isOverdueFilterActive ? (
                   <button
                     onClick={handleResetFilters}
-                    className="px-4 py-2 rounded-xl text-xs font-semibold bg-[#F7F8F5] hover:bg-[#EAF0E7] text-[#283128] border border-[#E8ECE5] transition-colors cursor-pointer"
+                    className="px-4 py-2 rounded-xl text-xs font-semibold bg-[#F7F6FC] hover:bg-[#DDE5F5] text-[#34364F] border border-[#E2E1F0] transition-colors cursor-pointer"
                   >
                     Clear Filters
                   </button>
@@ -343,7 +343,7 @@ export default function App() {
                       setEditingTask(null);
                       setIsTaskModalOpen(true);
                     }}
-                    className="flex items-center space-x-1.5 px-4 py-2 rounded-xl text-xs font-semibold bg-[#789477] hover:bg-[#5F795E] text-white shadow-xs transition-all active:scale-98 cursor-pointer"
+                    className="flex items-center space-x-1.5 px-4 py-2 rounded-xl text-xs font-semibold bg-[#8494C4] hover:bg-[#6678AB] text-white shadow-xs transition-all active:scale-98 cursor-pointer"
                   >
                     <Plus className="w-3.5 h-3.5 stroke-[2.5]" />
                     <span>Add First Task</span>
